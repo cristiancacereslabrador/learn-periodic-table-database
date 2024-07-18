@@ -1,0 +1,83 @@
+PSQL="psql --username=freecodecamp --dbname=<database_name> -t --no-align -c"
+ALTER TABLE properties RENAME COLUMN weight TO atomic_mass
+psql --username=freecodecamp --dbname=periodic_table
+builtin unset VSCODE_INJECTION
+[ -z "$VSCODE_SHELL_INTEGRATION" ]
+[ -n "${VSCODE_ENV_REPLACE:-}" ]
+[ -n "${VSCODE_ENV_PREPEND:-}" ]
+[ -n "${VSCODE_ENV_APPEND:-}" ]
+[[ "$(uname -s)" =~ ^CYGWIN*|MINGW*|MSYS* ]]
+__vsc_is_windows=0
+[[ "$HISTCONTROL" =~ .. ]]
+__vsc_history_verify=1
+__vsc_initialized=0
+__vsc_original_PS1="$PS1"
+__vsc_original_PS2="$PS2"
+__vsc_custom_PS1=""
+__vsc_custom_PS2=""
+__vsc_in_command_execution="1"
+__vsc_current_command=""
+__vsc_nonce="$VSCODE_NONCE"
+unset VSCODE_NONCE
+__vsc_stable="$VSCODE_STABLE"
+unset VSCODE_STABLE
+[ "$__vsc_stable" = "0" ]
+[[ -n "${bash_preexec_imported:-}" ]]
+__vsc_dbg_trap="$(__vsc_get_trap DEBUG)"
+[[ -z "$__vsc_dbg_trap" ]]
+[[ "$__vsc_dbg_trap" != '__vsc_preexec "$_"' && "$__vsc_dbg_trap" != '__vsc_preexec_all "$_"' ]]
+trap '__vsc_preexec_all "$_"' DEBUG
+__vsc_original_prompt_command=${PROMPT_COMMAND:-}
+git log
+mkdir periodic_table
+echo "# Periodic Table Project" > README.md
+touch element.sh
+git add element.sh
+pg_dump -cC --inserts -U freecodecamp periodic_table > periodic_table.sql
+git add periodic_table.sql
+./element.sh
+ls --color=auto
+./element.sh
+git commit -m "c2"
+git commit -m "c2"
+git commit -m "c2"
+git commit -m "c2"
+git add element.sh
+git commit -m "c2"
+git add element.sh
+git commit -m "c3"
+git add element.sh
+git commit -m "c4"
+git add element.sh
+git commit -m "c5"
+git add element.sh
+git commit -m "c6"
+./element.sh 1
+./element.sh H
+./element.sh Hydrogen
+git add element.sh
+git commit -m "fix:"
+git add element.sh
+git commit -m "feat:"
+git add element.sh
+git commit -m "refactor:"
+git add element.sh
+git commit -m "chctor:"
+git commit -m "chore:"
+git add element.sh
+git commit -m "test:"
+git log --oneline
+git add element.sh
+git commit -m "chore:"
+git log --oneline
+chmod +x element.sh
+./element.sh 1
+./element.sh H
+./element.sh Hydrogen
+git log --oneline
+git rebase -i HEAD~10
+git add .
+git stash
+git rebase -i HEAD~10
+git log --oneline
+git rebase -i HEAD~13
