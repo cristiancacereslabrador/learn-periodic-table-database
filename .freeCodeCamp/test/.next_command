@@ -133,3 +133,14 @@ __vsc_prompt_cmd_original
 __vsc_prompt_cmd_original
 __vsc_prompt_cmd_original
 git add .
+cd periodic_table/
+ls --color=auto
+git add .
+git commit -m "files"
+git status
+git checkout main
+git merge CVCL
+git merge cvcl
+ls --color=auto
+git add .
+git commit -m "fix: correct directory structure and add necessary files"
